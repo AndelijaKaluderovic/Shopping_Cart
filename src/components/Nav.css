@@ -1,5 +1,5 @@
 .nav{
-    background-color: yellow;
+    background-color: #1F9C50;
     height: 60px;
     top: 0;
     position: sticky;
@@ -16,17 +16,17 @@
     position: absolute;
     margin-top: 5px;
 }
-.nav-content:hover{
-    cursor: pointer;
-}
 .nav-icon{
     font-size: 23px;
+    color: white;
+    cursor: pointer;
 }
 .cart-item{
     position: relative;
     top: -15px;
     right: 5px;
-    background-color: brown;
+    background-color: black;
     padding: 4px;
     border-radius: 30%;
+    color: white;
 }

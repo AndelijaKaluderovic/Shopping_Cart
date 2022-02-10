@@ -1,5 +1,6 @@
 import React from 'react';
 import './Product.css';
+import { Link } from 'react-router-dom';
 
 export default function Product() {
   return (
@@ -10,7 +11,7 @@ export default function Product() {
         <p>Product price</p>
         <p>Availible</p>
         <form>
-          <label for="color">Color:</label>
+          <label htmlFor="color">Color:</label>
           <select name="color" id="color">
             <option>Black</option>
             <option>White</option>
@@ -18,7 +19,7 @@ export default function Product() {
             <option>Blue</option>
           </select>
           <br />
-          <label for="size">Size:</label>
+          <label htmlFor="size">Size:</label>
           <select name="size" id="size">
             <option>41</option>
             <option>42</option>
@@ -28,6 +29,7 @@ export default function Product() {
         </form>
         <button>Add to cart</button>
       </div>
+     <Link to="/"><button>Back to home</button></Link> 
     </div>
   )
 }

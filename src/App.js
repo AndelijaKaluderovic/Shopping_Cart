@@ -3,16 +3,21 @@ import Nav from './components/Nav';
 import Products from './pages/Products';
 import Product from './pages/Product';
 import Checkout from './pages/Checkout';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Nav />
-      <Products />
-      <Product />
-      <Checkout />
+      <Switch>
+        <Route exact path="/" component={Products} />
+        <Route path="/product" component={Product} />
+        <Route path="/checkout" component={Checkout} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 
