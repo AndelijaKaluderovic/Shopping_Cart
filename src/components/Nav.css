@@ -1,4 +1,32 @@
 .nav{
     background-color: yellow;
     height: 60px;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+.nav-content{
+    padding-right: 30px; 
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+}
+.nav-content:hover{
+    cursor: pointer;
+}
+.nav-icon{
+    font-size: 23px;
+}
+.cart-item{
+    position: relative;
+    top: -15px;
+    right: 5px;
+    background-color: brown;
+    padding: 4px;
+    border-radius: 30%;
 }
