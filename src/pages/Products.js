@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Products.css';
 import { Link } from 'react-router-dom';
 
@@ -8,25 +8,24 @@ export default function Products() {
     fetchProducts();
   }, [])
   
-  const fetchProducts = async () => {
-    const products = await fetch('../mockup/products.json', {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
+  const [products, setProducts] = useState([]);
 
-    });
-    const productJSON = await products.json();
-    console.log(productJSON);
+  const fetchProducts = async () => {
+    const data = await fetch('../mockup/products.json');
+    const productsJSON = await data.json();
+    console.log(productsJSON.items);
+    setProducts(productsJSON.items);
   }
   return (
     <div className='products'>
+      {products.map(item => (
       <div className='products-card'>
       <div className='products-photo'>photo</div>
-      <p>Product name</p>
-      <p>Product price</p>
+      <p key={item.id}>{item.name}</p>
+      <p key={item.id}>{item.price}</p>
       <Link to="/product"><button>Details</button></Link>
       </div>
+      ))}
     </div>
   )
 }
