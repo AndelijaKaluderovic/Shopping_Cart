@@ -1,0 +1,11 @@
+.products-card{
+    border: 2px solid black;
+
+}
+.products-photo{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
