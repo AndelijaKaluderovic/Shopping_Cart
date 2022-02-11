@@ -1,29 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Product.css';
 import { Link } from 'react-router-dom';
 
 export default function Product({match}) {
    
-  // useEffect(() => {
-  //   fetchProduct();
-  //   console.log(match);
-  // }, [])
+  const [product, setProduct] = useState([]);
   
-  // const [product, setProduct] = useState([]);
+  const fetchProduct = async () => {
+    const id = parseInt(match.params.id);
+    const data = await fetch('/mockup/products.json');
+    const productJSON = await data.json();
+    const oneProduct = productJSON.items.filter(item => item.id === id);
+    console.log(oneProduct);
+    setProduct(oneProduct);
+  }
+  useEffect(() => {
+    fetchProduct();
+  }, [])
 
-  // const fetchProduct = async () => {
-  //   const data = await fetch('../mockup/products.json');
-  //   const productJSON = await data.json();
-  //   console.log('coming from products', productJSON.items);
-  //   setProduct(productJSON.items);
-  // }
   return (
     <div className='product'>
-      <div className='product-card'>
+      {product.map(item => (
+      <div key={item.id} className='product-card'>
         <div className='product-photo'>photo</div>
         <div className='product-info'>
-        <p>Product name</p>
-        <p>Product price</p>
+        <p>{item.name}</p>
+        <p>{item.price} kr</p>
         <p>Available</p>
         <form>
           <label htmlFor="color">Color:</label>
@@ -45,6 +47,7 @@ export default function Product({match}) {
       <button type="button" className="product-button">Add to cart</button>
         </div>
       </div>
+      ))}
      <Link className='product-link' to="/"><span>&#8592; Back to home</span></Link> 
     </div>
   )

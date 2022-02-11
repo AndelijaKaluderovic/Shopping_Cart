@@ -11,9 +11,8 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
-    const data = await fetch('../mockup/products.json');
+    const data = await fetch('/mockup/products.json');
     const productsJSON = await data.json();
-    console.log(productsJSON.items);
     setProducts(productsJSON.items);
   }
   return (
