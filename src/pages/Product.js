@@ -42,10 +42,10 @@ export default function Product({match}) {
             <option>44</option>
           </select>
         </form>
+      <button type="button" className="product-button">Add to cart</button>
         </div>
-        <button type="button" className="product-button">Add to cart</button>
       </div>
-     <Link to="/">&#8592; Back to home</Link> 
+     <Link className='product-link' to="/"><span>&#8592; Back to home</span></Link> 
     </div>
   )
 }

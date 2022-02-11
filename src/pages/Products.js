@@ -26,7 +26,7 @@ export default function Products() {
       <p className='products-name'>{item.name}</p>
       <p className='products-price'>{item.price} kr</p>
       </div>
-      <Link className='link' to={`/product/${item.id}`}><button className="products-button">Details</button></Link>
+      <Link className='products-link' to={`/product/${item.id}`}><button className="products-button">Details</button></Link>
       </div>
       ))}
     </div>
