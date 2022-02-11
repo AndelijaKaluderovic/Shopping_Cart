@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Product.css';
 import { Link } from 'react-router-dom';
 
-export default function Product() {
+export default function Product({match}) {
+   
+  // useEffect(() => {
+  //   fetchProduct();
+  //   console.log(match);
+  // }, [])
+  
+  // const [product, setProduct] = useState([]);
+
+  // const fetchProduct = async () => {
+  //   const data = await fetch('../mockup/products.json');
+  //   const productJSON = await data.json();
+  //   console.log('coming from products', productJSON.items);
+  //   setProduct(productJSON.items);
+  // }
   return (
-    <div>
+    <div className='product'>
       <div className='product-card'>
         <div className='product-photo'>photo</div>
+        <div className='product-info'>
         <p>Product name</p>
         <p>Product price</p>
-        <p>Availible</p>
+        <p>Available</p>
         <form>
           <label htmlFor="color">Color:</label>
           <select name="color" id="color">
@@ -27,9 +42,10 @@ export default function Product() {
             <option>44</option>
           </select>
         </form>
-        <button>Add to cart</button>
+        </div>
+        <button type="button" className="product-button">Add to cart</button>
       </div>
-     <Link to="/"><button>Back to home</button></Link> 
+     <Link to="/">&#8592; Back to home</Link> 
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default function Checkout() {
   return (
     <div className="checkout">
       <p>Checkout</p>
-      <Link to="/"><button>Back to home</button></Link> 
+      <Link to="/">&#8592; Back to home</Link> 
       </div>
   )
 }

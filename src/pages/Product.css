@@ -1,10 +1,24 @@
-.product-card{
-    background-color: aquamarine;
+.product{
+    margin-top: 30px;
 }
 .product-photo{
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
     text-align: center;
     margin: 0 auto;
+}
+.product-button{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid #1F9C50;
+    border-radius: 5px;
+    background-color: #1F9C50;
+    color: white;
+}
+.product-info{
+    padding-left: 20px;
 }
