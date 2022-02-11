@@ -21,6 +21,30 @@
     border: red;
     border-radius: 50%;
 }
+.btn-pay,
+.btn-back{
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #1F9C50;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #1F9C50;
+}
+.btn-pay:hover,
+.btn-back:hover{
+    cursor: pointer;
+    background-color: #1F9C50;
+    color: white;
+}
+.cart-link{
+    text-decoration: none;
+}
+.cart-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
 @media screen and (min-width: 600px) {
     .cart-info{
         display: flex;

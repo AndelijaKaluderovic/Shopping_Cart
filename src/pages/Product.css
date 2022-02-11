@@ -13,7 +13,8 @@
     padding-left: 20px;
     padding-bottom: 30px;
 }
-.product-button{
+.product-button,
+.shopping-button{
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -21,21 +22,33 @@
     font-size: 20px;
     border: 1px solid #1F9C50;
     border-radius: 5px;
+}
+.product-button{
     background-color: #1F9C50;
     color: white;
+
+}
+.shopping-button{
+    background-color: white;
+    color: #1F9C50;
+}
+.product-button:hover,
+.shopping-button:hover{
+    cursor: pointer;
+}
+.product-button:hover{
+    background-color: white;
+    color: #1F9C50;
 }
 .product-link{
     text-decoration: none;
-    margin-left: 20px;
 }
-
 @media screen and (min-width: 600px) {
     .product-card{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
     }
-    .product-button{
-        display: inline-block;
-        margin-top: 20px;
+    .product-footer{
+        margin-left: 400px;
     }
 }

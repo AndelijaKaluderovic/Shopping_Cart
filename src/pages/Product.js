@@ -11,7 +11,6 @@ export default function Product({match}) {
     const data = await fetch('/mockup/products.json');
     const productJSON = await data.json();
     const oneProduct = productJSON.items.filter(item => item.id === id);
-    console.log(oneProduct);
     setProduct(oneProduct);
   }
   useEffect(() => {
@@ -44,11 +43,13 @@ export default function Product({match}) {
             <option>44</option>
           </select>
         </form>
-      <button type="button" className="product-button">Add to cart</button>
         </div>
       </div>
       ))}
-     <Link className='product-link' to="/"><span>&#8592; Back to home</span></Link> 
+      <footer className='product-footer'>
+      <button className="product-button">Add to cart</button>
+      <Link className='product-link' to='/'><button className='shopping-button'>Keep shopping</button></Link>
+      </footer>
     </div>
   )
 }
