@@ -7,18 +7,19 @@ import Checkout from './pages/Checkout';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
-
   const [products, setProducts] = useState([]);
   const [product, setProduct] = useState(undefined);
   const [cartItems, setCartItems] = useState([]);
+  console.log(product);
 
   const fetchProducts = async () => {
     const data = await fetch('/data/products.json');
     const productsJSON = await data.json();
     setProducts(productsJSON.items);
   };
-  const handeProductDetails = (id) => {
-    setProduct(products.find(x => x.id === id));
+  const handleProductDetails = (id) => {
+    const oneProduct = products.find(x => x.id === id)
+    setProduct(oneProduct);
   }
   const handleAddToCart = (product) => {
     const productExist = cartItems.find(x => x.id === product.id);
@@ -37,7 +38,8 @@ function App() {
     }
   }
   const handleRemoveItem = (product) => {
-    setCartItems(cartItems.filter((x => x.id !== product.id)));
+    const newCartItems = cartItems.filter((x => x.id !== product.id))
+    setCartItems(newCartItems);
   }
 
   useEffect(() => {
@@ -50,7 +52,7 @@ function App() {
         <Nav cartCounter={cartItems.length} />
         <Switch>
           <Route exact path="/">
-            <Products handeProductDetails={handeProductDetails} products={products} />
+            <Products handleProductDetails={handleProductDetails} products={products} />
           </Route>
           <Route path="/product/:id" >
             <Product handleAddToCart={handleAddToCart} product={product} />
@@ -62,6 +64,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

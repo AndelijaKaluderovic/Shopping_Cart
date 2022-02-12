@@ -3,9 +3,13 @@ import './Checkout.css';
 import { Link } from 'react-router-dom';
 import CartTemplate from '../components/CartTemplate';
 
+export function getTotalPrice(data) {
+  return data.reduce((a, c) => a + c.price * c.qty, 0);
+}
+;
 
 export default function Checkout({ cartItems, handleAddToCart, handleDecreseQty, handleRemoveItem }) {
-  const totalPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
+  const totalPrice = getTotalPrice(cartItems);
   return (
     <div className='checkout'>
       <CartTemplate cartItems={cartItems} handleAddToCart={handleAddToCart} handleDecreseQty={handleDecreseQty} handleRemoveItem={handleRemoveItem} />
