@@ -26,25 +26,25 @@
     text-decoration: none;
 }
 .products-button{
-display: block;
-margin: 0 auto;
-width: 100%;
-padding: 10px 0;
-font-size: 15px;
-border: 1px solid #1F9C50;
-border-radius: 5px;
-background-color: #1F9C50;
-color: white;
-text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    border: 1px solid #1F9C50;
+    border-radius: 5px;
+    background-color: #1F9C50;
+    color: white;
+    text-transform: uppercase;
 }
 .products-soldout{
-color: rgb(240, 240, 240);
-background-color: rgb(198, 198, 198);
-text-align: center;
-font-size: 15px;
-padding: 10px 60px;
-text-transform: uppercase;
-border-radius: 5px;
+    color: rgb(240, 240, 240);
+    background-color: rgb(198, 198, 198);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 60px;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
 .products-button:hover{
     cursor: pointer;

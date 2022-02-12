@@ -6,7 +6,7 @@ export default function Products({ products, handeProductDetails }) {
   return (
     <div className='products'>
       {products.map(item => (
-          <ProductTemplate key={item.id} item={item} handeProductDetails={handeProductDetails} />
+        <ProductTemplate key={item.id} item={item} handeProductDetails={handeProductDetails} />
       ))}
     </div>
   )

@@ -14,8 +14,8 @@ export default function Checkout({ cartItems, handleAddToCart, handleDecreseQty,
         : <p>Cart is empty</p>
       }
       <footer className='cart-footer'>
-        <Link className='cart-link' to='/'><button className='btn-back'>Keep shopping</button></Link>
-        <button className='btn-pay'>Pay</button>
+        <Link className='cart-link' to='/'><button className='btn-back'>Continue shopping</button></Link>
+        <button className='btn-pay'>Proceed to Pay</button>
       </footer>
     </div>
   )

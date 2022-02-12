@@ -2,34 +2,10 @@ import React from 'react';
 import './Product.css';
 import { Link } from 'react-router-dom';
 
-export default function Product({product, handleAddToCart}) {
-
-  // const [product, setProduct] = useState([]);
-
-  // const fetchProduct = async () => {
-  //   const data = await fetch('/data/products.json');
-  //   const productJSON = await data.json();
-  //   const oneProduct = await productJSON.items.filter(item => item.id === parseInt(match.params.id));
-  //   setProduct(oneProduct[0]);
-  // }
-
-  // useEffect(() => {
-  //   fetchProduct();
-  //     // eslint-disable-next-line
-  // }, [])
-
-  // const fetchProduct = async () => {
-  //   await fetch('/mockup/products.json').then(response => {
-  //     return response.json()
-  //   }).then(responseData => {
-  //     return responseData.items.filter(item => item.id === parseInt(match.params.id));
-  //   }).then(data => {
-  //     setProduct(data[0]);
-  //   })
-  //     .catch(err => {
-  //       console.log("fetch error" + err);
-  //     });
-  // }
+export default function Product({ product, handleAddToCart }) {
+  const handleFeedback = () => {
+    return alert('Product is added');
+  }
 
   return (
     <div className='product'>
@@ -52,9 +28,13 @@ export default function Product({product, handleAddToCart}) {
                 <option key={index}>{option.quantity}</option>
               ))}
             </select>
-          </form> }
-          {product.available && <button onClick={() => handleAddToCart(product)} className="product-button">Add to cart</button>}
-          <Link className='product-link' to='/'><button className='shopping-button'>Keep shopping</button></Link>
+          </form>}
+          {product.available && <button onClick={() => {
+            handleFeedback();
+            handleAddToCart(product);
+          }}
+            className="product-button">Add to cart</button>}
+          <Link className='product-link' to='/'><button className='shopping-button'>Continue shopping</button></Link>
         </div>
       </div>
     </div>

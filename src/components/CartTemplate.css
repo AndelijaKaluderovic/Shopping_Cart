@@ -10,9 +10,30 @@
     display: block;
     margin: 0 auto;
 }
+.cart-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cart-qty{
+    padding: 0 10px;
+}
 .btn-remove{
     background-color: red;
     color: white;
     border: red;
     border-radius: 50%;
+}
+@media screen and (min-width: 600px) {
+    .cart-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cart-photo{
+        display: inline-block;
+        margin: 0;
+    }
 }
