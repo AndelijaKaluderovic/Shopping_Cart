@@ -29,19 +29,30 @@
     text-decoration: none;
 }
 .products-button{
-    display: block;
-    margin: 0 auto;
-    padding: 5px 10px;
-    font-size: 15px;
-    border: 1px solid #1F9C50;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #1F9C50;
+display: block;
+margin: 0 auto;
+width: 100%;
+padding: 10px 0;
+font-size: 15px;
+border: 1px solid #1F9C50;
+border-radius: 5px;
+background-color: #1F9C50;
+color: white;
+text-transform: uppercase;
+}
+.products-soldout{
+color: rgb(240, 240, 240);
+background-color: rgb(198, 198, 198);
+text-align: center;
+font-size: 15px;
+padding: 10px 60px;
+text-transform: uppercase;
+border-radius: 5px;
 }
 .products-button:hover{
     cursor: pointer;
-    background-color: #1F9C50;
-    color: white;
+    background-color: transparent;
+    color: #1F9C50;
 }
 @media screen and (min-width: 600px) {
     .products{

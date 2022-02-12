@@ -31,6 +31,10 @@
     background-color: white;
     color: #1F9C50;
 }
+.shopping-unavailable-button{
+    background-color: gray;
+    color: white;
+}
 .product-button:hover,
 .shopping-button:hover{
     cursor: pointer;
@@ -41,6 +45,12 @@
 }
 .product-link{
     text-decoration: none;
+}
+.product-available{
+    color: #1F9C50;
+}
+.product-unavailable{
+    color: red;
 }
 @media screen and (min-width: 600px) {
     .product-card{
