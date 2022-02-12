@@ -1,32 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Products.css';
-import { Link } from 'react-router-dom';
+import ProductTemplate from '../components/ProductTemplate';
 
-export default function Products() {
-  
-  useEffect(() => {
-    fetchProducts();
-  }, [])
-  
-  const [products, setProducts] = useState([]);
-
-  const fetchProducts = async () => {
-    const data = await fetch('/mockup/products.json');
-    const productsJSON = await data.json();
-    setProducts(productsJSON.items);
-  }
+export default function Products({ products, handeProductDetails }) {
   return (
     <div className='products'>
       {products.map(item => (
-      <div key={item.id} className='products-card'>
-      <div className='products-photo'>photo</div>
-      <div className='products-info'>
-      <p className='products-brand'>{item.brand}</p>
-      <p className='products-name'>{item.name}</p>
-      <p className='products-price'>{item.price} kr</p>
-      </div>
-      {item.available ? <Link className='products-link' to={`/product/${item.id}`}><button className="products-button">Details</button></Link> : <p className='products-soldout'>Sold out</p>}
-      </div>
+          <ProductTemplate key={item.id} item={item} handeProductDetails={handeProductDetails} />
       ))}
     </div>
   )

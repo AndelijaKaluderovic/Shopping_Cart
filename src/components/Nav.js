@@ -2,7 +2,7 @@ import React from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
-export default function Nav() {
+export default function Nav({cartCounter}) {
   return (
     <div className="nav">
         <div className='nav-content'>
@@ -11,7 +11,13 @@ export default function Nav() {
             <i className='fas fa-cart-shopping'></i>
           </span>
       </Link>
-          <div className='cart-item'>0</div>
+          <div className='cart-item'>
+            {cartCounter ? 
+              cartCounter
+            :
+            0
+            }
+          </div>
         </div>
     </div>
   )

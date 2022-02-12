@@ -1,0 +1,18 @@
+.cart{
+    padding: 20px;
+    border-bottom: 1px solid green;
+}
+.cart-photo{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.btn-remove{
+    background-color: red;
+    color: white;
+    border: red;
+    border-radius: 50%;
+}
