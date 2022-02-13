@@ -10,13 +10,14 @@ function App() {
   const [products, setProducts] = useState([]);
   const [product, setProduct] = useState(undefined);
   const [cartItems, setCartItems] = useState([]);
-  console.log(product);
 
   const fetchProducts = async () => {
     const data = await fetch('/data/products.json');
     const productsJSON = await data.json();
     setProducts(productsJSON.items);
+    return productsJSON.items;
   };
+  
   const handleProductDetails = (id) => {
     const oneProduct = products.find(x => x.id === id)
     setProduct(oneProduct);
@@ -29,7 +30,7 @@ function App() {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
   }
-  const handleDecreseQty = (product) => {
+  const handleDecreaseQty = (product) => {
     const productExist = cartItems.find(x => x.id === product.id);
     if (productExist.qty === 1) {
       setCartItems(cartItems.filter(x => x.id !== product.id));
@@ -44,7 +45,7 @@ function App() {
 
   useEffect(() => {
     fetchProducts();
-  }, [])
+  }, []);
 
   return (
     <Router>
@@ -58,7 +59,7 @@ function App() {
             <Product handleAddToCart={handleAddToCart} product={product} />
           </Route>
           <Route path="/checkout" >
-            <Checkout cartItems={cartItems} handleAddToCart={handleAddToCart} handleDecreseQty={handleDecreseQty} handleRemoveItem={handleRemoveItem} />
+            <Checkout cartItems={cartItems} handleAddToCart={handleAddToCart} handleDecreaseQty={handleDecreaseQty} handleRemoveItem={handleRemoveItem} />
           </Route>
         </Switch>
       </div>

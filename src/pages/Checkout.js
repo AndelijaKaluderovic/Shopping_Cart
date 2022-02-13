@@ -5,14 +5,13 @@ import CartTemplate from '../components/CartTemplate';
 
 export function getTotalPrice(data) {
   return data.reduce((a, c) => a + c.price * c.qty, 0);
-}
-;
+};
 
-export default function Checkout({ cartItems, handleAddToCart, handleDecreseQty, handleRemoveItem }) {
+export default function Checkout({ cartItems, handleAddToCart, handleDecreaseQty, handleRemoveItem }) {
   const totalPrice = getTotalPrice(cartItems);
   return (
     <div className='checkout'>
-      <CartTemplate cartItems={cartItems} handleAddToCart={handleAddToCart} handleDecreseQty={handleDecreseQty} handleRemoveItem={handleRemoveItem} />
+      <CartTemplate cartItems={cartItems} handleAddToCart={handleAddToCart} handleDecreaseQty={handleDecreaseQty} handleRemoveItem={handleRemoveItem} />
       {cartItems.length !== 0
         ? <p>Total: {totalPrice} kr</p>
         : <p>Cart is empty</p>
