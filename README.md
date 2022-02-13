@@ -12,7 +12,6 @@ Shopping Cart project was bootstrapped with [Create React App](https://github.co
 - Node.js
 - NPM
 
-```javascript
 
 /* First, Install the needed packages */
 npm install
@@ -37,7 +36,6 @@ npm test
 
 #### Source folder structure
 
-```
 components -> 
                 - CartTemplate
                 - Nav
@@ -49,4 +47,3 @@ pages ->
                 - Products
 App
 index
-```
