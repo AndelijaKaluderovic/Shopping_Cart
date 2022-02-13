@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
 }
+.checkout-total{
+    font-weight: bold;
+}
 .btn-pay,
 .btn-back{
     padding: 5px 10px;

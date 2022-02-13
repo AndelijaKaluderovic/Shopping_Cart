@@ -1,10 +1,11 @@
 .cart{
     padding: 20px;
+}
+.cart-info{
+    padding: 20px;
     border-bottom: 1px solid green;
 }
-.cart-photo{
-    border: 1px solid black;
-    border-radius: 3px;
+.cart-photo img{
     width: 100px;
     height: 100px;
     display: block;
@@ -31,6 +32,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+    .cart-name{
+        width: 300px;
     }
     .cart-photo{
         display: inline-block;

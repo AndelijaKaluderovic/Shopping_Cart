@@ -6,7 +6,9 @@ export default function CartTemplate({ cartItems, handleAddToCart, handleDecreas
         <div className='cart'>
             {cartItems.map(item => (
                 <div key={item.id} className='cart-info'>
-                    <div className='cart-photo'>photo</div>
+                    <div className='cart-photo'>
+                        <img src={item.image} alt={item.name} />
+                    </div>
                     <p className='cart-name'>{item.name}</p>
                     <div className='cart-buttons'>
                         <button onClick={() => handleDecreaseQty(item)} className='btn-decrease'>-</button>

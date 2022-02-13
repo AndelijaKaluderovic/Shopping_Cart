@@ -1,17 +1,19 @@
 import React from 'react';
-import './ProductTemplate.css';
 import { Link } from 'react-router-dom';
+import './ProductTemplate.css';
 
 export default function ProductTemplate({ item, handleProductDetails }) {
     return (
-        <section className='products-card'>
-            <div className='products-photo'>photo</div>
-            <div className='products-info'>
-                <p className='products-brand'>{item.brand}</p>
-                <p className='products-name'>{item.name}</p>
-                <p className='products-price'>{item.price}kr</p>
+        <section className='productTemplate-card'>
+            <div className='productTemplate-photo'>
+                <img src={item.image} alt={item.name} />
             </div>
-            <Link className='products-link' to={`/product/${item.id}`}><button onClick={() => handleProductDetails(item.id)} className="products-button">Details</button></Link>
+            <div className='productTemplate-info'>
+                <p className='productTemplate-brand'>{item.brand}</p>
+                <p className='productTemplate-name'>{item.name}</p>
+                <p className='productTemplate-price'>{item.price}kr</p>
+            </div>
+            <Link className='productTemplate-link' to={`/product/${item.id}`}><button onClick={() => handleProductDetails(item.id)} className="productTemplate-button">Details</button></Link>
         </section>
     )
 }

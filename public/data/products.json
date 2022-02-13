@@ -5,6 +5,7 @@
             "name": "Philips hue bulb",
             "brand": "Philips",
             "price": "500",
+            "image": "/images/1.jpg",
             "available": true,
             "weight": 0.2,
             "options": [
@@ -31,6 +32,7 @@
             "name": "Trådfria Lampor",
             "brand": "IKEA",
             "price": "300",
+            "image": "/images/2.jpg",
             "available": true,
             "weight": 0.2,
             "options": [
@@ -64,6 +66,7 @@
             "name": "Playstation 4",
             "brand": "Sony",
             "price": "5000",
+            "image": "/images/3.jpg",
             "available": true,
             "weight": 2.1,
             "options": [
@@ -91,6 +94,7 @@
             "name": "Nintendo switch",
             "brand": "Nintendo",
             "price": "4500",
+            "image": "/images/4.jpg",
             "available": true,
             "weight": 1.6,
             "options": [
@@ -124,6 +128,7 @@
             "name": "Bluetooth speaker",
             "brand": "JBL",
             "price": "800",
+            "image": "/images/5.jpg",
             "available": false,
             "weight": 0.5,
             "options": [
@@ -146,6 +151,7 @@
             "name": "Bluetooth speaker",
             "brand": "Marshall",
             "price": "950",
+            "image": "/images/6.jpg",
             "available": true,
             "weight": 0.5,
             "options": [
@@ -168,6 +174,7 @@
             "name": "Electrical toothbrush",
             "brand": "BRAUN",
             "price": "950",
+            "image": "/images/7.jpg",
             "available": false,
             "weight": 0.4,
             "options": [
@@ -186,6 +193,7 @@
             "name": "Samsung 40 UHD Smart TV",
             "brand": "SAMSUNG",
             "price": "3200",
+            "image": "/images/8.jpg",
             "available": true,
             "weight": 8.2,
             "options": [
@@ -200,6 +208,7 @@
             "name": "BenQ GW2765HE Eye-Care",
             "brand": "BenQ",
             "price": "2700",
+            "image": "/images/9.jpg",
             "available": false,
             "weight": 3.9,
             "options": [
@@ -214,6 +223,7 @@
             "name": "Corsair HS60 gaming headset",
             "brand": "Corsair",
             "price": "1200",
+            "image": "/images/10.jpg",
             "available": true,
             "weight": 0.8,
             "options": [

@@ -2,12 +2,21 @@
     margin-top: 30px;
 }
 .product-photo{
-    border: 1px solid black;
+    border: 4px solid orange;
     border-radius: 20px;
     width: 300px;
     height: 300px;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-photo img{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 .product-info{
     padding-left: 20px;
@@ -52,6 +61,24 @@
 .product-unavailable{
     color: red;
 }
+.products-variant{
+    margin-right: 10px;
+}
+.product-feedback {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    animation: Blink 1s infinite;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  @keyframes Blink {
+    100%{
+        opacity: 0.3;
+    }
+}
+ 
 @media screen and (min-width: 600px) {
     .product-card{
         display: grid;

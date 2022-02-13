@@ -1,6 +1,6 @@
 import React from 'react';
-import './Products.css';
 import ProductTemplate from '../components/ProductTemplate';
+import './Products.css';
 
 export default function Products({ products, handleProductDetails }) {
   return (

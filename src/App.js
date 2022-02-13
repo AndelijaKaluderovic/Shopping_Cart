@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Products from './pages/Products';
 import Product from './pages/Product';
 import Checkout from './pages/Checkout';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -17,7 +16,7 @@ function App() {
     setProducts(productsJSON.items);
     return productsJSON.items;
   };
-  
+
   const handleProductDetails = (id) => {
     const oneProduct = products.find(x => x.id === id)
     setProduct(oneProduct);

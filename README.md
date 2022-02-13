@@ -1,13 +1,12 @@
 # Lendo Shopping Cart
 
-Shopping Cart project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and it represents a minimal online shopping solution, which was given by Lendo AB as test assignment. For this project, provided JSON file was used as "backend".
+Shopping Cart project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and it represents a minimal online shopping solution, which was given by Lendo AB as test assignment. For this project, provided JSON file was used as "backend", while the entire solution is styled via using CSS and is set as responsive for various device/screen sizes (mobile-first).
 
-<!-- <p align="center">
+<p align="center">
+  <img src="https://i.ibb.co/2y28V07/preview.png">
+</p>
 
-  <img src="./doc/react-shopping-cart-min.gif">
-</p> -->
-
-#### Requirements
+### Requirements
 
 - Node.js
 - NPM
@@ -22,7 +21,7 @@ npm start
 npm test
 ```
 
-#### Once developed application user will be able to perform the following actions:
+### Once developed application user will be able to perform the following actions:
 
 - Browse products on The Home page;
 - See the details about selected product and choose between available colors;
@@ -34,13 +33,15 @@ npm test
 - Modify quantity and/or remove the item from the cart;
 
 
-<h4> Source folder structure </h4>
+<br />
+
+### Source folder structure
+
 ```
 components -> 
                 - CartTemplate
                 - Nav
                 - ProductTemplate
-
 pages -> 
                 - Checkout
                 - Product
@@ -48,3 +49,7 @@ pages ->
 App
 index
 ```
+
+
+
+
