@@ -11,8 +11,7 @@ Shopping Cart project was bootstrapped with [Create React App](https://github.co
 
 - Node.js
 - NPM
-
-
+```javascript
 /* First, Install the needed packages */
 npm install
 
@@ -21,6 +20,7 @@ npm start
 
 /* To run the tests */
 npm test
+```
 
 #### Once developed application user will be able to perform the following actions:
 
@@ -34,8 +34,8 @@ npm test
 - Modify quantity and/or remove the item from the cart;
 
 
-#### Source folder structure
-
+<h4> Source folder structure </h4>
+```
 components -> 
                 - CartTemplate
                 - Nav
@@ -47,3 +47,4 @@ pages ->
                 - Products
 App
 index
+```
