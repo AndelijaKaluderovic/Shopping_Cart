@@ -49,7 +49,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav cartCounter={cartItems.length} />
+        <Nav cartItems={cartItems} />
         <Switch>
           <Route exact path="/">
             <Products handleProductDetails={handleProductDetails} products={products} />

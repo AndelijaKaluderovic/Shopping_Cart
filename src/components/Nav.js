@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-export default function Nav({ cartCounter }) {
+export default function Nav({ cartItems }) {
+  const cartCounter = cartItems.map(item => item.qty).reduce((acc, item) => item + acc, 0);
   return (
     <section className="nav">
       <Link to="/" className='nav-link'>
