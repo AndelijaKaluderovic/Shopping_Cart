@@ -256,7 +256,7 @@
                 },
                 {
                     "color": "gray",
-                    "quantity": 9
+                    "quantity": 5
                 },
                 {
                     "color": "gold",
@@ -281,58 +281,58 @@
         },
         {
             "id": 13,
-            "name": "Corsair HS60 gaming headset",
-            "brand": "Corsair",
-            "price": "1200",
-            "image": "/images/10.jpg",
+            "name": "Smeg Fridge 50",
+            "brand": "Smeg",
+            "price": "12000",
+            "image": "/images/13.jpg",
             "available": true,
-            "weight": 0.8,
+            "weight": 30,
             "options": [
                 {
                     "color": "black",
-                    "quantity": 3
+                    "quantity": 8
                 },
                 {
-                    "color": "red",
+                    "color": "orange",
                     "quantity": 9
+                },
+                {
+                    "color": "purple",
+                    "quantity": 1
+                },
+                {
+                    "color": "white",
+                    "quantity": 2
                 }
             ]
         },
         {
             "id": 14,
-            "name": "Corsair HS60 gaming headset",
-            "brand": "Corsair",
-            "price": "1200",
-            "image": "/images/10.jpg",
+            "name": "Eclipse F5s Inline Skaters",
+            "brand": "Flying Eagle",
+            "price": "3100",
+            "image": "/images/14.jpg",
             "available": true,
-            "weight": 0.8,
+            "weight": 1,
             "options": [
                 {
                     "color": "black",
                     "quantity": 3
-                },
-                {
-                    "color": "red",
-                    "quantity": 9
                 }
             ]
         },
         {
             "id": 15,
-            "name": "Corsair HS60 gaming headset",
-            "brand": "Corsair",
-            "price": "1200",
-            "image": "/images/10.jpg",
+            "name": "Multi talent3 food blender",
+            "brand": "Bosch",
+            "price": "900",
+            "image": "/images/15.jpg",
             "available": true,
-            "weight": 0.8,
+            "weight": 3,
             "options": [
                 {
                     "color": "black",
                     "quantity": 3
-                },
-                {
-                    "color": "red",
-                    "quantity": 9
                 }
             ]
         }
