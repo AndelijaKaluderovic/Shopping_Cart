@@ -29,35 +29,16 @@
         },
         {
             "id": 2,
-            "name": "Trådfria Lampor",
-            "brand": "IKEA",
-            "price": "300",
+            "name": "Samsung 40 UHD Smart TV",
+            "brand": "SAMSUNG",
+            "price": "3200",
             "image": "/images/2.jpg",
             "available": true,
-            "weight": 0.2,
+            "weight": 8.2,
             "options": [
                 {
-                    "color": "white",
-                    "power": [
-                        6.5,
-                        9.5
-                    ],
-                    "quantity": 3
-                },
-                {
-                    "color": "red",
-                    "power": [
-                        6.5,
-                        9.5
-                    ],
-                    "quantity": 7
-                },
-                {
-                    "color": "green",
-                    "power": [
-                        6.5
-                    ],
-                    "quantity": 0
+                    "color": "black",
+                    "quantity": 19
                 }
             ]
         },
@@ -190,16 +171,35 @@
         },
         {
             "id": 8,
-            "name": "Samsung 40 UHD Smart TV",
-            "brand": "SAMSUNG",
-            "price": "3200",
+            "name": "Trådfria Lampor",
+            "brand": "IKEA",
+            "price": "300",
             "image": "/images/8.jpg",
             "available": true,
-            "weight": 8.2,
+            "weight": 0.2,
             "options": [
                 {
-                    "color": "black",
-                    "quantity": 19
+                    "color": "white",
+                    "power": [
+                        6.5,
+                        9.5
+                    ],
+                    "quantity": 3
+                },
+                {
+                    "color": "red",
+                    "power": [
+                        6.5,
+                        9.5
+                    ],
+                    "quantity": 7
+                },
+                {
+                    "color": "green",
+                    "power": [
+                        6.5
+                    ],
+                    "quantity": 0
                 }
             ]
         },
@@ -220,6 +220,105 @@
         },
         {
             "id": 10,
+            "name": "Corsair HS60 gaming headset",
+            "brand": "Corsair",
+            "price": "1200",
+            "image": "/images/10.jpg",
+            "available": true,
+            "weight": 0.8,
+            "options": [
+                {
+                    "color": "black",
+                    "quantity": 3
+                },
+                {
+                    "color": "red",
+                    "quantity": 9
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "iPhone 13 Pro Max",
+            "brand": "Apple",
+            "price": "13500",
+            "image": "/images/11.jpg",
+            "available": true,
+            "weight": 0.8,
+            "options": [
+                {
+                    "color": "blue",
+                    "quantity": 3
+                },
+                {
+                    "color": "silver",
+                    "quantity": 9
+                },
+                {
+                    "color": "gray",
+                    "quantity": 9
+                },
+                {
+                    "color": "gold",
+                    "quantity": 9
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Dyson Pure Humidify+Cool",
+            "brand": "Dyson",
+            "price": "7200",
+            "image": "/images/12.jpg",
+            "available": false,
+            "weight": 2,
+            "options": [
+                {
+                    "color": "black",
+                    "quantity": 3
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Corsair HS60 gaming headset",
+            "brand": "Corsair",
+            "price": "1200",
+            "image": "/images/10.jpg",
+            "available": true,
+            "weight": 0.8,
+            "options": [
+                {
+                    "color": "black",
+                    "quantity": 3
+                },
+                {
+                    "color": "red",
+                    "quantity": 9
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Corsair HS60 gaming headset",
+            "brand": "Corsair",
+            "price": "1200",
+            "image": "/images/10.jpg",
+            "available": true,
+            "weight": 0.8,
+            "options": [
+                {
+                    "color": "black",
+                    "quantity": 3
+                },
+                {
+                    "color": "red",
+                    "quantity": 9
+                }
+            ]
+        },
+        {
+            "id": 15,
             "name": "Corsair HS60 gaming headset",
             "brand": "Corsair",
             "price": "1200",
