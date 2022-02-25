@@ -2,6 +2,8 @@
 
 Shopping Cart project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and it represents a minimal online shopping solution, which was given by Lendo AB as test assignment. For this project, provided JSON file was used as "backend", while the entire solution is styled via using CSS and is set as responsive for various device/screen sizes (mobile-first).
 
+[Demo](https://github.com/facebook/create-react-app)
+
 <p align="center">
   <img src="https://i.ibb.co/2y28V07/preview.png">
 </p>

@@ -9,7 +9,7 @@ export default function Nav({ cartItems }) {
       <Link to="/" className='nav-link'>
         <div className='nav-left'>
           <h3 className='nav-logo'>
-            Lendo Shopping Cart
+            Shopping Cart
           </h3>
         </div>
       </Link>
